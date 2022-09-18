@@ -409,9 +409,7 @@ font-style: normal;
     background: #FFFFFF;
 }
 
-.list-team .text{
-    margin-bottom: 30px;
-}
+
 
 .padding-top{
     padding-top: 0;
@@ -453,4 +451,24 @@ font-style: normal;
 
 .client-item:not(:last-child){
     margin-right: 30px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+
+.social-icon{
+    box-sizing: border-box;
+}
+
+.social-link + .social-link{
+    margin-right: 10px;
+}
+
+.social-container{
+    display: flex;
+    max-width: 206px;
+    height: 44px;
+margin: 16px 32px 30px 32px;
 }
