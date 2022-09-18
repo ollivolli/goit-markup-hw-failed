@@ -91,7 +91,7 @@ body {
 }
 
 .link:hover,
-.link:focus{
+.link:focus{    
     color: var(--accent-color);
 }
 
@@ -141,7 +141,7 @@ padding-bottom: 24px;
 }
 
 .auth .item + .item{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .logo-span{
@@ -164,6 +164,10 @@ padding-bottom: 24px;
 line-height: 16px;
 }
 
+.icon-smartphone, 
+.icon-envelope {
+    margin-right: 10px;
+}
 
 /*Секція Герой*/
 
@@ -258,6 +262,15 @@ color: var(--secondary-text-color);
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+  }
+
+  .benefits-icon{
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: var(--btn-color);
+    border-radius: 4px;
   }
 
   .list-wrapper{
@@ -415,4 +428,29 @@ font-style: normal;
 
 .client-logo{
     fill: var(--primary-text-color);
+    display: block;
+    background-size: contain;
+}
+
+.client-list{
+    display: flex;
+}
+
+/* .client-link {
+    display: block;
+}
+
+.client-link:hover,
+.client-link:focus{
+    fill: var(--accent-color);
+} */
+
+.client-item{
+    padding: 16px 32px;
+    min-width: 170px;
+    border: 1px solid #AFB1B8;
+}
+
+.client-item:not(:last-child){
+    margin-right: 30px;
 }
