@@ -3,7 +3,8 @@
     --primary-title-color: #ffffff;
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
-    --btn-color: #F5F4FA
+    --btn-color: #F5F4FA;
+    --client-color: #AFB1B8;
 }
 
 h1, h2, h3, h4, h5, h6, ul, p {
@@ -88,6 +89,7 @@ body {
 .link{
     text-decoration: none;
     display: flex;
+    cursor: pointer;
 }
 
 .link:hover,
@@ -429,12 +431,12 @@ font-style: normal;
 }
 
 .icon-envelope{
-    fill: var(--primary-text-color);
+    fill: var(--client-color);
     background-size: contain;
 }
 
 .client-logo{
-    fill: var(--primary-text-color);
+    fill: var(--client-color);
     display: block;
     background-size: contain;
 }
@@ -443,19 +445,20 @@ font-style: normal;
     display: flex;
 }
 
-/* .client-link {
+.client-link {
     display: block;
 }
 
-.client-link:hover,
-.client-link:focus{
+.client-logo:hover,
+.client-logo:focus{
     fill: var(--accent-color);
-} */
+}
 
 .client-item{
     padding: 16px 32px;
     min-width: 170px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--client-color);
+    fill: currentColor;
 }
 
 .client-item:not(:last-child){
@@ -471,9 +474,20 @@ font-style: normal;
     box-sizing: border-box;
 }
 
-.social-link + .social-link{
+.social-link:not(:last-child){
     margin-right: 10px;
 }
+
+.social-icon{
+    fill: #FFFFFF
+}
+
+
+.social-icon:hover,
+.social-icon:focus{
+    fill: var(--accent-color);
+}
+
 
 .social-container{
     display: flex;
@@ -483,7 +497,8 @@ margin: 16px 32px 30px 32px;
 }
 
 .footer-position-social{
-    margin-top: 12px;
+    margin-top: 72px;
+    margin-left: 70px;
     height: 80px;
 }
 
@@ -508,9 +523,10 @@ margin: 16px 32px 30px 32px;
 
 .footer-social-icon{
     list-style: none;
-    background: rgba(255, 255, 255, 0.1);
+    fill: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
+
 
 .footer-social-icon:not(:last-child){
     margin-right: 10px;
@@ -526,6 +542,5 @@ margin: 16px 32px 30px 32px;
 
 .footer-social-link:hover,
 .footer-social-link:focus{
-    background: var(--accent-color);
-    cursor: pointer;
+    fill: var(--accent-color);
 }
